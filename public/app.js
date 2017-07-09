@@ -5,7 +5,7 @@ learnjs.problemView = function(problemNumber) {
   var title = 'Problem #' + problemNumber + ' Coming soon!';
   var view = $('.template .problem-view').clone();
   view.find('.title').text('Problem #' + problemNumber);
-  learnjs.applyObject(learnjs.problems[problemNumber], view);
+  learnjs.applyObject(learnjs.problems[problemNumber-1], view);
   return view;
 }
 
