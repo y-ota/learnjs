@@ -11,7 +11,7 @@
     <script src='/app.js'></script>
     <style type="text/css" media="all">
       body { margin-top: 30px; }
-      .template{ display:none;}
+      .templates{ display:none;}
     </style>
   </head>
   <body>
@@ -29,11 +29,21 @@
       </div>
      </div>
     </div>
-    <div class='template'>
+    <div class='templates'>
      <div class='problem-view'>
       <h3 class='title'></h3>
       <p data-name='description'></p>
       <pre><code data-name='code'></code></pre>
+      <form>
+       <textarea class='u-full-width answer'></textarea>
+       <div>
+         <button class='button-primary check-btn'>Check Anser</button>
+         <p class='result'></p>
+       </div>
+       </form>
+     </div>
+     <div class='correct-flash'>
+      <span>Correct!</span> <a>Next Problem</a>
      </div>
     </div>
    </div>
